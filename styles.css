@@ -4,7 +4,7 @@
 
 .top {
     display: flex;
-    background-color: rgb(130, 194, 27);
+    background-color: #82c21b;
 }
 
 .top-links {
@@ -21,3 +21,35 @@
     margin-left: 30px;
 }
 
+.hero-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 300px;
+}
+
+.hero-text {
+    display: flex;
+    background-color: brown;
+    flex-direction: column;
+    width: 450px;
+    margin-left: 80px;
+    align-items: center;
+    padding: 10px;
+}
+
+button {
+    height: auto;
+    width: 70px;
+}
+
+.image-container {
+    display: flex;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 450px;
+    margin-right: 80px;
+    padding: 50px;
+}
