@@ -94,3 +94,23 @@ button {
     background-color: rgb(31, 190, 190);
     color: blue;
 }
+
+.callaction {
+    display: flex;
+    background-color: rgb(167, 235, 43);
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    gap: 200px;
+    flex: 1 1 auto;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
