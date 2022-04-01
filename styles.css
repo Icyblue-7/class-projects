@@ -75,3 +75,22 @@ button {
 .sub-text {
     width: 70px;
 }
+
+.quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(64, 218, 110);
+}
+
+.quote-text {
+    width: 350px;
+}
+
+#quote-author {
+    display: flex;
+    justify-items: right;
+    background-color: rgb(31, 190, 190);
+    color: blue;
+}
