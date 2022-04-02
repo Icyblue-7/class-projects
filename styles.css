@@ -29,28 +29,29 @@ hero container*/
 
 .hero-container {
     display: flex;
-    background-color: blanchedalmond;
+    background-color: #1F2937;
     justify-content: center;
     padding: 50px;
     flex: 1 1 auto;
 }
 
 .hero-text {
-    background-color: rgb(60, 60, 124);
     padding: 20px;
     flex: 0 1 auto;
     width: 450px;
+    color: azure;
 
 }
 
 .image-container {
     display: flex;
-    background-color: aqua;
+    background-color: #959ca8;
     justify-content: center;
     align-items: center;
     padding: 100px;
     width: 350px;
     flex: 0 1 auto;
+    color: azure;
 }
 
 
