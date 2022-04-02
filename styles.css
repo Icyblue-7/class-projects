@@ -94,24 +94,27 @@ img {
 
 .quotes {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: rgb(64, 218, 110);
-    flex: 1;
+    align-items: center;
+    background-color: #e5e7eb;
+    color: #1F2937;
+    flex: 1 1 auto;
+    padding: 80px;
 }
 
 .quote-text {
-    width: 350px;
+    width: 750px;
+    font-style: light italic;
 }
 
 #quote-author {
     display: flex;
-    justify-items: right;
-    flex: 1;
-    background-color: rgb(31, 190, 190);
-    color: rgb(236, 14, 14);
+    justify-content: right;
+    width: 700px;
+    font-weight: bold;
 }
+/*quote container end
+call to action container */
 
 .callaction {
     display: flex;
@@ -127,6 +130,9 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+/*call to action container end
+footer */
 
 footer {
     display: flex;
