@@ -3,6 +3,7 @@
 }
 
 /* header logo */
+
 .top {
     display: flex;
     background-color: #1F2937;
@@ -23,41 +24,37 @@ a {
     text-decoration: none;
     color: azure;
 }
-/* header logo end */
+/* header logo end 
+hero container*/
 
 .hero-container {
     display: flex;
+    background-color: blanchedalmond;
     justify-content: center;
-    gap: 100px;
-    height: 300px;
+    padding: 50px;
+    flex: 1 1 auto;
 }
 
 .hero-text {
-    display: flex;
-    background-color: brown;
-    flex-direction: column;
+    background-color: rgb(60, 60, 124);
+    padding: 20px;
+    flex: 0 1 auto;
     width: 450px;
-    margin-left: 80px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
-button {
-    height: auto;
-    width: 70px;
 }
 
 .image-container {
     display: flex;
-    background-color: green;
-    align-items: center;
+    background-color: aqua;
     justify-content: center;
-    height: auto;
-    width: 450px;
-    margin-right: 80px;
-    padding: 50px;
+    align-items: center;
+    padding: 100px;
+    width: 350px;
+    flex: 0 1 auto;
 }
+
+
+/* hero container */
 
 .random-info {
     background-color: blueviolet;
