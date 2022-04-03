@@ -155,14 +155,14 @@ call to action container */
     color: azure;
 }
 
-#signup-button {
+button {
     flex: 0 0 auto;
     width: 120px;
-    background-color: inherit;
+    background-color: #3882F6;
     color: azure;
     border-radius: 10px;
-    border-color: white;
     border-style: solid;
+    border-color: azure;
     padding: 10px;
 
 }
@@ -176,6 +176,6 @@ footer {
     color: azure;
     justify-content: center;
     padding: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
