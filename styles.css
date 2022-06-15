@@ -1,0 +1,37 @@
+.nav-bar a {
+    text-decoration: none;
+    color: rgb(156, 15, 15);
+    padding: 5px;
+}
+.nav-bar {
+    text-align: right;
+    margin: 10px;
+}
+header {
+    background-color: rgb(220, 220, 238);
+    padding: 20px;
+}
+
+#about {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    margin: 10px 20px;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+img {
+    height: 180px;
+    width: 250px;
+}
+
+.container .alt-container {
+    text-align: center;
+    margin: 10px auto;
+    border: 2px solid blue;
+    padding: 10px;
+}
