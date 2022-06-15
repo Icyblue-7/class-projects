@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form(example)</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form(example)</h1>
+      <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+    </header>
+    <div class="wrapper">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name<input id="name" type="text" placeholder="name" name="name" required></label>
+          <label>Last name<input id="last-name" type="text" placeholder="last name" name="last-name" required></label>
+          <label id="number-label">Age<input id="number" type="number" placeholder="Age" name="age" min="18" max="120" required></label>
+          <label id="email-label">E-mail<input id="email" type="email" placeholder="E-mail" name="email" required></label>
+        </fieldset>
+
+        <fieldset id="choices">
+          <p>Choices</p>
+          
+          <label><input type="radio" name="choice" value="1" class="inline">Choice 1</label>
+          <label><input type="radio" name="choice" value="2" class="inline">Choice 2</label>
+          <label><input type="radio" name="choice" value="3" class="inline">Choice 3</label>
+        </fieldset>
+
+        <fieldset id="pick">
+          <p>Pick one or several</p>
+          <label><input type="checkbox" name="pick" value="1c" class="inline">option 1</label>
+          <label><input type="checkbox" name="pick" value="2c" class="inline">option 2</label>
+          <label><input type="checkbox" name="pick" value="3c" class="inline">option 3</label>
+          <label><input type="checkbox" name="pick" value="4c" class="inline">option 4</label>
+        </fieldset>
+
+        <fieldset id="select">
+          <p>select one</p>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">option 1</option>
+            <option value="2">option 2</option>
+            <option value="3">option 3</option>
+            <option value="4">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label>Upload pics(optional)<input type="file" name="file"></label>
+
+          <label>Leave a comment
+            <textarea name="bio" rows="5" cols="40">comment</textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+  </html>
