@@ -51,4 +51,11 @@ function playGame() {
     console.log(playRound(playerSelection, computerSelection));
 }
 
-playGame();
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playGame();
+    }
+}
+
+game();
