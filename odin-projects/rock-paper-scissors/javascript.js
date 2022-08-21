@@ -14,7 +14,7 @@ let userInput = prompt('Rock, Paper or Scissors?', 'insert your choice here');
 userInput = userInput.toLowerCase();
 
 
-function determineWinner(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     
     if (playerSelection === computerSelection) {
         return "Draw";
@@ -47,8 +47,8 @@ function playGame() {
     const computerSelection = getComputerChoice();
     console.log(playerSelection);
     console.log(computerSelection);
-    determineWinner(playerSelection, computerSelection);
-    console.log(determineWinner(playerSelection, computerSelection));
+    playRound(playerSelection, computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
 }
 
 playGame();
