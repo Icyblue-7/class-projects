@@ -2,6 +2,8 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const playerChoiceDisplay = document.getElementById('player-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
+const playerScoreDisplay = document.getElementById('player-score');
+const computerScoreDisplay = document.getElementById('computer-score');
 
 
 let computerChoice
@@ -31,6 +33,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     playerChoiceDisplay.innerHTML = userInput;
     getComputerChoice();
     getResult();
+    showScore();
 }));
 
 
@@ -64,6 +67,21 @@ function getResult() {
 };
     resultDisplay.innerHTML = result;
 };
+
+let score;
+let playerScore = 0;
+let computerScore = 0;
+
+function showScore() {
+    if (result === "You won!!") {
+        playerScore++;
+    };
+    playerScoreDisplay.innerHTML = playerScore;
+    if (result === "You lost, computer won") {
+        computerScore++;
+    }
+    computerScoreDisplay.innerHTML = computerScore;
+}
 
 
 // function game() {
