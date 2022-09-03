@@ -1,61 +1,75 @@
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const playerChoiceDisplay = document.getElementById('player-choice');
+const resultDisplay = document.getElementById('result');
+const possibleChoices = document.querySelectorAll('button');
+
+
+let computerChoice
+
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random()*3);
     switch (randomNumber) {
         case 0:
-            return "rock";
+            computerChoice = "rock";
+            break;
         case 1:
-            return "paper";
+            computerChoice = "paper";
+            break;
         case 2:
-            return "scissors";
+            computerChoice = "scissors";
+            break;
     }
-}
 
-let userInput = prompt('Rock, Paper or Scissors?', 'insert your choice here');
-userInput = userInput.toLowerCase();
+    computerChoiceDisplay.innerHTML = computerChoice;
+};
 
 
-function playRound(playerSelection, computerSelection) {
-    
-    if (playerSelection === computerSelection) {
-        return "Draw";
-    }
-    if (playerSelection === "rock") {
-        if (computerSelection === "paper") {
-            return "You lost, computer won";
+let userInput 
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userInput = e.target.id
+    playerChoiceDisplay.innerHTML = userInput;
+    getComputerChoice();
+    getResult();
+}));
+
+
+let result
+
+function getResult() {
+
+    if (userInput === "rock") {
+        if (computerChoice === "paper") {
+            result = "You lost, computer won";
         } else {
-            return "You won!!";
+            result = "You won!!";
         }
-    }
-    if (playerSelection === "paper") {
-        if (computerSelection === "scissors") {
-            return "You lost, computer won";
+    };
+    if (userInput === "paper") {
+        if (computerChoice === "scissors") {
+            result = "You lost, computer won";
         } else {
-            return "You won!!";
+            result = "You won!!";
         }
-    }
-    if (playerSelection === "scissors") {
-        if (computerSelection === "rock") {
-            return "You lost, computer won";
+    };
+    if (userInput === "scissors") {
+        if (computerChoice === "rock") {
+            result = "You lost, computer won";
         } else {
-            return "You won!!";
+            result = "You won!!";
         }
-}
-}
-
-function playGame() {
-    const playerSelection = userInput;
-    const computerSelection = getComputerChoice();
-    console.log(playerSelection);
-    console.log(computerSelection);
-    playRound(playerSelection, computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-}
+};
+    if (userInput === computerChoice) {
+    result = "Draw";
+};
+    resultDisplay.innerHTML = result;
+};
 
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playGame();
-    }
-}
+// function game() {
+//     for (let i = 0; i < 5; i++) {
+//         playGame();
+//     }
+// }
 
-game();
+// game();
